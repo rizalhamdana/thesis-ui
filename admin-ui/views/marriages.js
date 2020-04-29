@@ -4,7 +4,7 @@ function showMarriagesListView(){
     marriages = getAllMarriage(token);
     marriages.then(data => {
     if (data instanceof Error){
-        document.getElementById("numberMarriage").innerHTML = "-"
+        // document.getElementById("numberMarriage").innerHTML = "-"
         return
     }
     

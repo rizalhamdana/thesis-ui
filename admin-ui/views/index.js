@@ -25,6 +25,18 @@ function showDashboard(){
     document.getElementById("numberMarriage").innerHTML = marriagesCount;
     marriageRecordsTableMapping(data);
    });
+
+   families = getAllFamilies(token)
+   families.then(data => {
+        if (data instanceof Error){
+            document.getElementById("numberFamily").innerHTML = "-"
+            return
+        }
+        var familiesCount = Object.keys(data).length
+        document.getElementById("numberFamily").innerHTML = familiesCount;
+        familyRecordsTableMapping(data)
+   })
+
    birth = getAllBirth(token);
    birth.then(data => {
     if (data instanceof Error){
