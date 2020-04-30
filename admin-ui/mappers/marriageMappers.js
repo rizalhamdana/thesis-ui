@@ -69,7 +69,7 @@ function marriageFormMapping(data){
     regisNumber.value = data.regis_number;
     
 
-    // if (data.verified_status){
-    //     document.getElementById("verify-button").style.visibility = "hidden";
-    // }
+    if (data.verified_status){
+        document.getElementById("verify-button").style.visibility = "hidden";
+    }
 }
