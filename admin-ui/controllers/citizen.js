@@ -1,4 +1,4 @@
-var apiGatewayURL = "http://192.168.1.6:31679";
+var apiGatewayURL = "http://192.168.43.200:31679";
 function getAllCitizen(token) {
   const url = apiGatewayURL + "/citizens";
   const other_params = {
@@ -73,6 +73,7 @@ function insertCitizen(token, data) {
       Token: token,
     },
     body: JSON.stringify(data),
+    mode: "cors",
   };
   var result = fetch(url, other_params)
     .then(function (response) {
@@ -139,6 +140,7 @@ function updateOneCitizen(token, data, nik) {
       Token: token,
     },
     body: JSON.stringify(data),
+    mode: "cors",
   };
   var result = fetch(url, other_params)
     .then(function (response) {
