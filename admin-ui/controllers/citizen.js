@@ -72,8 +72,8 @@ function insertCitizen(token, data) {
       "Content-Type": "application/json",
       Token: token,
     },
+    mode: "cors",
     body: JSON.stringify(data),
-    
   };
   var result = fetch(url, other_params)
     .then(function (response) {
@@ -139,6 +139,7 @@ function updateOneCitizen(token, data, nik) {
       "Content-Type": "application/json",
       Token: token,
     },
+    mode: "cors",
     body: JSON.stringify(data),
   };
   var result = fetch(url, other_params)
