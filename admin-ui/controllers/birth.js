@@ -1,4 +1,4 @@
-var apiGatewayURL = "http://192.168.43.200:31679";
+var apiGatewayURL = "http://192.168.1.4:31679";
 
 function getAllBirth(token) {
   const url = apiGatewayURL + "/birth";
