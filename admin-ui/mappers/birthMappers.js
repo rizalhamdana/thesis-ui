@@ -106,10 +106,10 @@ function birthFormMapping(data) {
   //     : "ni ni-fat-remove";
   //   isVerifiedLogo.setAttribute("class", verifiedClass);
 
-  //   const regisNumber = document.getElementById("input-regis-number");
-  //   regisNumber.value = data.regis_number;
+  const regisNumber = document.getElementById("input-regis-number");
+  regisNumber.value = data.birth_regis_number;
 
-  //   if (data.verified_status) {
-  //     document.getElementById("verify-button").style.visibility = "hidden";
-  //   }
+  if (data.verified_status) {
+    document.getElementById("verify-button").style.visibility = "hidden";
+  }
 }

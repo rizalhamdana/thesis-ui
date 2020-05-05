@@ -36,3 +36,22 @@ function showBirthForm() {
     birthFormMapping(data);
   });
 }
+
+function verifyBirth() {
+  isAuth();
+  const token = getCookie("Token");
+
+  const regisNumber = document.getElementById("input-regis-number").value;
+  console.log(regisNumber);
+
+  const verify = verifyOneBirth(token, regisNumber);
+  verify.then((data) => {
+    if (data instanceof Error) {
+      alert("Failed Verifying Birth Record: " + data);
+      window.location = "../birth.html";
+      return;
+    }
+    alert("Verifying birth record success");
+    window.location = "../birth.html";
+  });
+}

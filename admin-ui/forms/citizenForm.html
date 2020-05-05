@@ -139,7 +139,7 @@
                     <img alt="Image placeholder" src="../assets/img/theme/team-4.jpg">
                   </span>
                   <div class="media-body  ml-2  d-none d-lg-block">
-                    <span class="mb-0 text-sm  font-weight-bold">John Snow</span>
+                    <span class="mb-0 text-sm  font-weight-bold" id="logged-in-username">John Snow</span>
                   </div>
                 </div>
               </a>
@@ -207,6 +207,8 @@
                         <label class="form-control-label" for="input-email">Sex</label>
                         
                         <select required class="form-control" id="input-sex">
+                          <option value="">Select Sex</option>
+                         
                           <option value="Male">Male</option>
                           <option value="Female">Female</option>
                         </select >
@@ -245,6 +247,7 @@
                       <div class="form-group">
                         <label class="form-control-label" for="input-religion">Religion</label>
                         <select required class="form-control" id="input-religion">
+                          <option value="">Select Religion</option>
                           <option value="Islam">Islam</option>
                           <option value="Protestant Christian">Protestant Christian</option>
                           <option value="Catholic Christian">Catholic Christian</option>
@@ -260,6 +263,7 @@
                       <div class="form-group">
                         <label class="form-control-label" for="input-blood-type">Blood Type</label>
                         <select required class="form-control" id="input-blood-type">
+                          <option value="">Select Blood Type</option>
                           <option value="A">A</option>
                           <option value="B">B</option>
                           <option value="AB">AB</option>
@@ -279,6 +283,7 @@
                       <div class="form-group">
                         <label class="form-control-label" for="input-marriage-status">Marriage Status</label>
                         <select required class="form-control" id="input-marriage-status">
+                          <option value="">Select Marriage Status</option>
                           <option value="Not Married">Not Married</option>
                           <option value="Married">Married</option>
                           <option value="Widower/Widow">Widower/Widow</option>
@@ -353,7 +358,7 @@
                   </div>
                 </div> -->
                 <hr class="my-4" />
-                <button class="btn btn-md btn-primary" onclick="updateCitizen()" id="submit-button" type="submit">Submit</button>
+                <button class="btn btn-md btn-primary" onclick="updateCitizen()" id="submit-button" type="button">Submit</button>
                 <!-- Description -->
               </fieldset>
               </form>
@@ -391,6 +396,7 @@
   </div>
   <!-- Argon Scripts -->
   <!-- Core -->
+  <script src="../assets/js/jwt-decode.min.js"></script>
   <script src="../controllers/User.js"></script>
   <script src="../controllers/citizen.js"></script>
   <script src="../mappers/citizenMappers.js"></script> 

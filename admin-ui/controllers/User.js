@@ -1,4 +1,4 @@
-var apiGatewayUrl = "http://192.168.1.4:31679";
+var apiGatewayUrl = "http://192.168.1.8:31679";
 
 function login(username, password) {
   const data = {
@@ -71,4 +71,12 @@ function isAuth() {
   if (!isAuthenticated) {
     window.location = "../login.html";
   }
+  decodeJWT();
+}
+
+function decodeJWT() {
+  const token = getCookie("Token");
+  const decoded = jwt_decode(token);
+  const username = decoded.username;
+  document.getElementById("logged-in-username").innerHTML = username;
 }
