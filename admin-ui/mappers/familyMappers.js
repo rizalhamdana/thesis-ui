@@ -53,8 +53,11 @@ function familyFormMapping(data) {
   const husbandNIK = document.getElementById("input-head-of-household");
   husbandNIK.value = data.head_of_household;
 
-  const rtrwField = document.getElementById("input-rt-rw");
-  rtrwField.value = data.rt + "/" + data.rw;
+  const rtField = document.getElementById("input-rt");
+  rtField.value = data.rt;
+
+  const rwField = document.getElementById("input-rw");
+  rwField.value = data.rw;
 
   const villageField = document.getElementById("input-village-kelurahan");
   villageField.value = data.village_or_kelurahan;

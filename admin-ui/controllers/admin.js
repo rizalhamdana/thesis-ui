@@ -1,4 +1,4 @@
-const apiGatewayURL = "http://192.168.1.8:31679";
+const apiGatewayURL = "http://192.168.1.9:31679";
 
 function getAllAdmin(token) {
   const url = apiGatewayURL + "/admin";
