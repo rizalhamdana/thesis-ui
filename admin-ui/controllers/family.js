@@ -1,4 +1,4 @@
-var apiGatewayURL = "http://api-gateway:3000";
+var apiGatewayURL = "/gateway";
 function getAllFamilies(token) {
   const url = apiGatewayURL + "/family";
   const other_params = {

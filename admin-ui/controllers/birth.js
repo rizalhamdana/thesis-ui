@@ -1,4 +1,4 @@
-var apiGatewayURL = "http://api-gateway:3000";
+var apiGatewayURL = "/gateway";
 
 function getAllBirth(token) {
   const url = apiGatewayURL + "/birth";

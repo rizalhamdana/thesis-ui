@@ -1,4 +1,4 @@
-const apiGatewayURL = "http://api-gateway:3000";
+const apiGatewayURL = "/gateway";
 
 function getAllAdmin(token) {
   const url = apiGatewayURL + "/admin";

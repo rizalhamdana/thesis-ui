@@ -1,4 +1,4 @@
-var apiGatewayURL = "http://api-gateway:3000";
+var apiGatewayURL = "/gateway";
 function getAllMarriage(token) {
   const url = apiGatewayURL + "/married";
   const other_params = {
