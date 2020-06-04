@@ -5,7 +5,7 @@ function makeRequest(
   requestBody = "",
   isLogin = false
 ) {
-  const BASE_URL = "http://api-gateway:3000/";
+  const BASE_URL = "/gateway/";
   const other_params = {
     method: requestMethod,
     headers: {

@@ -22,7 +22,6 @@ function loginRequest() {
       }
       const token = data;
       saveToken(token);
-      alert(token);
       document.location = "../profile.html";
     })
     .catch((err) => {
