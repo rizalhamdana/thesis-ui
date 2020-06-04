@@ -1,4 +1,4 @@
-var apiGatewayURL = "http://192.168.1.9:31679";
+var apiGatewayURL = "http://api-gateway:3000";
 function getAllCitizen(token) {
   const url = apiGatewayURL + "/citizens";
   const other_params = {

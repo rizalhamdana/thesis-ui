@@ -1,4 +1,4 @@
-var apiGatewayUrl = "http://192.168.1.9:31679";
+var apiGatewayUrl = "http://api-gateway:3000";
 
 function login(username, password) {
   const data = {
